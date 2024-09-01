@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Store</title>
+    <link rel="stylesheet" href="../Pages/Profile/profile.css" />
+  </head>
+  <body>
+    <nav class="nav">
+
+      <div class="top" style="margin-top: 25px">
+        <a href="../index.html">
+          <img src="../Food Images/Backspace.png" alt=""
+        /></a>
+        <h1>Cart</h1>
+
+        <img src="../Food Images/dark2.png" alt="" class="icon" />
+      </div>
+    </nav>
+
+    <section class="header">
+      <img
+        src="../Food Images/food1.png"
+        alt=""
+        class="circle"
+        style="border-radius: 50%; width: 200px"
+      />
+      <img src="../Food Images/Rectangle.png" alt="" class="rec"/>
+    </section>
+
+    <section class="details">
+      <h1>Harmbuger</h1>
+
+      <div class="stars">
+        <div class="stars-icon">
+          <img src="../Food Images/Star.png" alt="" />
+          <img src="../Food Images/Star.png" alt="" />
+          <img src="../Food Images/Star.png" alt="" />
+          <img src="../Food Images/Star.png" alt="" />
+          <img src="../Food Images/Star.png" alt="" />
+        </div>
+
+        <p>5.0</p>
+      </div>
+
+      <div class="check" style="margin-bottom: 50px">
+        <div class="plus">
+          <button class="decrease but">-</button>
+          <h2 class="value"></h2>
+          <button style="margin-left: 5px" class="increase but">+</button>
+        </div>
+
+        <div class="naira">
+          <h1 style="font-size: 28px" class="price"></h1>
+        </div>
+      </div>
+
+      <a href="" class="btn but cart" style="margin-bottom: 130px;">Add to Cart</a>
+    </section>
+
+    <div class="bottom">
+      <div class="buy">
+        <a href="../Pages/Order/order.html"
+          ><img src="../Food Images/Buy.png" alt=""
+        /></a>
+      </div>
+      <div class="home">
+        <a href="../index.html"><img src="../Food Images/Home.png" alt="" /></a>
+      </div>
+      <div class="notification">
+        <a href="../notification.html"
+          ><img src="../Food Images/Notification.png" alt=""
+        /></a>
+      </div>
+    </div>
+
+    <script>
+      const dark = document.querySelector(".icon");
+      const nav = document.querySelector(".nav");
+      const bottom = document.querySelector(".bottom");
+      const but = document.querySelectorAll(".but");
+      const rec = document.querySelector(".rec");
+      
+
+      dark.addEventListener("click", () => {
+        nav.classList.toggle("active");
+        bottom.classList.toggle("active");
+        rec.classList.toggle("active");
+        but.forEach((butt) =>{
+          butt.classList.toggle("active");
+        })
+      });
+    </script>
+    
+    <script src="product.js"></script>
+    <script src="../app.js"></script>
+  </body>
+</html>

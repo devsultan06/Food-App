@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Store</title>
+    <link rel="stylesheet" href="profile.css" />
+  </head>
+  <body>
+    <nav class="nav">
+
+      <div class="top" style="margin-top: 25px">
+        <a href="../../index.html">
+          <img src="../../Food Images/Backspace.png" alt=""
+        /></a>
+        <h1>Profile</h1>
+
+        <img src="../../Food Images/dark2.png" alt="" class="icon">
+      </div>
+    </nav>
+
+    <section class="header">
+      <img src="../../Food Images/circle.png" alt="" />
+      <img src="../../Food Images/Rectangle.png" alt="" class="rec"/>
+    </section>
+
+    <section class="profile">
+        <a href="personal.html">Personal Info</a>
+        <a href="card.html">My Card</a>
+        <a href="">FAQs</a>
+        <a href="" style="margin-bottom: 150px;">Log-Out</a>
+    </section>
+
+
+    <div class="bottom">
+        <div class="buy">
+            <a href="../Order/order.html"><img src="../../Food Images/Buy.png" alt=""></a>
+        </div>
+        <div class="home">
+            <a href=".../../../../index.html"><img src="../../Food Images/Home.png" alt=""></a>
+        </div>
+        <div class="notification">
+            <a href="../../notification.html"><img src="../../Food Images/Notification.png" alt=""></a>
+        </div>
+      </div>
+
+
+      <script>
+        const dark = document.querySelector(".icon");
+        const nav = document.querySelector(".nav");
+        const bottom = document.querySelector(".bottom");
+
+        const rec = document.querySelector(".rec");
+        
+  
+        dark.addEventListener("click", () => {
+          nav.classList.toggle("active");
+          bottom.classList.toggle("active");
+          rec.classList.toggle("active");
+
+        });
+      </script>
+  </body>
+</html>

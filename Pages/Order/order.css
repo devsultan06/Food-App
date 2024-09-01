@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  scroll-behavior: smooth;
+  font-family: sans-serif;
+}
+
+@media screen and (max-width: 500px) {
+  nav {
+    height: 90px;
+    width: 100%;
+    background-color: #ffb14d;
+    padding: 10px 20px;
+    transition: 0.5s ease-in-out;
+    
+  }
+
+  .nav.active{
+    background-color: rgb(135, 131, 131);
+    color: white;
+  }
+
+  div.top-bar,
+  div.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  div.signal-bar img {
+    width: 25px;
+    margin-right: 2px;
+  }
+
+  div.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  div.top img.icon{
+    width: 25px;
+    mix-blend-mode: darken;
+  }
+
+
+  div.bottom {
+    display: flex;
+    align-items: center;
+    padding: 10px 35px 10px;
+    background-color: #ffb14d;
+    justify-content: space-between;
+    position: fixed;
+    right: 0;
+    bottom: -0%;
+    z-index: 10000;
+    left: 0;
+  }
+
+  .btn {
+    display: inline-block;
+    border-radius: 30px;
+    padding-top: 30px;
+    background: #ffb14d;
+    padding: 15px 30px;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: black;
+    margin-left: 130px;
+    text-decoration: none;
+    z-index: 500;
+  }
+  label {
+    color: #000;
+    font-family: Inter;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  section.profile,
+  section.form {
+    margin-top: 30px;
+    padding: 0px 10px;
+  }
+
+  section.profile a,
+  section.form input {
+    display: block;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 30px 0px;
+    color: #000;
+    display: flex;
+    background: #fff;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    align-items: center;
+    justify-content: space-between;
+    font-family: Poppins;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  section.form input,
+  textarea {
+    width: 100%;
+    box-shadow: none;
+    color: #000;
+    font-family: Inter;
+    font-size: 23px;
+    resize: none;
+    font-weight: 300;
+    border: none;
+    border-bottom: 1px solid black;
+  }
+
+  textarea{
+    border: 1px solid black;
+  }
+
+  .bottom.active{
+    background-color: rgb(135, 131, 131);
+    color: white;
+  }
+  .bottom.active div.home a img{
+    mix-blend-mode: luminosity
+  }
+
+  .but.active{
+    background-color: rgb(135, 131, 131);
+    transition: 0.5s ease-in-out;
+   }
+}
+
+@media screen and (max-width: 360px) {
+  
+}

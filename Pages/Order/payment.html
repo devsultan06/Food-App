@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Store</title>
+    <link rel="stylesheet" href="order.css" />
+  </head>
+  <body>
+    <nav class="nav">
+
+      <div class="top" style="margin-top: 25px">
+        <a href="order.html">
+            <img src="../../Food Images/Backspace.png" alt="" />
+        </a>
+  
+        <h1>Payment</h1>
+
+        <img src="../../Food Images/dark2.png" alt="" class="icon">
+      </div>
+      </div>
+    </nav>
+
+
+    <section class="form">
+        <label for="">Card Number:</label>
+        <input type="text" name="" id="" placeholder="Enter card number ( 16 digits)">
+        <label for="">Bank Name:</label>
+        <input type="tel" name="" id="" placeholder="Select a bank">
+        <label for="">Valid THRU</label>
+        <input type="email" name="" id="" placeholder="Select Date">
+        <label for="">CVV</label>
+        <input type="email" name="" id="" placeholder="Enter CVV">
+        <label for="">PIN</label>
+        <input type="email" name="" id="" placeholder="Enter PIN">
+
+    </section>
+
+
+
+    <a href="" class="btn but" style="margin-bottom: 150px;">Done</a>
+
+
+
+
+
+      
+
+      
+
+      <div class="bottom">
+        <div class="buy">
+            <a href="order.html"><img src="../../Food Images/Buy.png" alt=""></a>
+        </div>
+        <div class="home">
+            <a href="../../index.html"><img src="../../Food Images/Home.png" alt=""></a>
+        </div>
+        <div class="notification">
+            <a href="../../notification.html"><img src="../../Food Images/Notification.png" alt=""></a>
+        </div>
+      </div>
+
+    <script src="app.js"></script>
+
+    <script>
+      const dark = document.querySelector(".icon");
+      const nav = document.querySelector(".nav");
+      const bottom = document.querySelector(".bottom");
+      const but = document.querySelector(".but");
+      
+
+      dark.addEventListener("click", () => {
+        nav.classList.toggle("active");
+        bottom.classList.toggle("active");
+        but.classList.toggle("active");
+
+
+      });
+    </script> 
+  </body>
+</html>

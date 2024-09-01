@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Store</title>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="search-bar" style="margin-top: 25px">
+        <div class="search-box">
+          <img src="./Food Images/Search.png" alt="" />
+          <input type="search" name="" id="" class="idm" />
+        </div>
+
+        <div class="search-profile">
+          <img
+            src="./Food Images/dark2.png"
+            alt=""
+            class="icon"
+            style="mix-blend-mode: darken"
+          />
+          <a href="about.html">
+            <img src="Food Images/About.png" alt="" />
+          </a>
+
+          <a href="./Pages/Profile/profile.html">
+            <img src="Food Images/Image-60.png" alt="" />
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <section class="header">
+      <h1>
+        Customize your order<br />
+        & get your food delivered<br />
+        in a flash.
+      </h1>
+      <img src="Food Images/Rectangle.png" alt="" class="rec" />
+    </section>
+
+    <section class="offers">
+      <div class="offer-top">
+        <h1>Top Rated Offers</h1>
+        <a href="./Pages/toprated.html" class="btn">View All</a>
+      </div>
+
+      <div class="food-box">
+        <div class="food-item">
+          <a href="./Pages/product.html">
+            <img src="Food Images/food1.png" alt="" class="img"/>
+          </a>
+
+          <h2>Hamburger</h2>
+          <div class="price-list">
+            <h3>$1,600.0</h3>
+
+            <div class="star">
+              <img src="Food Images/Star.png" alt="" />
+              <p>5.0</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="food-item">
+          <a href="./Pages/product.html">
+            <img src="Food Images/food2.png" alt="" />
+          </a>
+
+          <h2>Cheese Pizza</h2>
+          <div class="price-list">
+            <h3>$1,600.0</h3>
+
+            <div class="star">
+              <img src="Food Images/Star.png" alt="" />
+              <p>5.0</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="food-item" style="z-index: 1000">
+          <a href="./Pages/product.html">
+            <img src="Food Images/food3.png" alt="" />
+          </a>
+
+          <h2>Chocolate D.</h2>
+          <div class="price-list">
+            <h3>$1,600.0</h3>
+
+            <div class="star">
+              <img src="Food Images/Star.png" alt="" />
+              <p>5.0</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="offers" style="margin-top: 10px; padding-bottom: 150px">
+      <div class="offer-top">
+        <h1>Suggested Offers</h1>
+        <a href="./Pages/suggested.html" class="btn">View All</a>
+      </div>
+
+      <div class="food-box">
+        <div class="food-item">
+          <a href="./Pages/product.html">
+            <img src="Food Images/food4.png" alt="" />
+          </a>
+
+          <h2>Confetti Ca..</h2>
+          <div class="price-list">
+            <h3>$1,600.0</h3>
+
+            <div class="star">
+              <img src="Food Images/Star.png" alt="" />
+              <p>5.0</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="food-item">
+          <a href="./Pages/product.html">
+            <img src="Food Images/food5.png" alt="" />
+          </a>
+
+          <h2>Funfetti Cake</h2>
+          <div class="price-list">
+            <h3>$1,600.0</h3>
+
+            <div class="star">
+              <img src="Food Images/Star.png" alt="" />
+              <p>5.0</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="food-item" style="z-index: 1000">
+          <a href="./Pages/product.html">
+            <img src="Food Images/food6.png" alt="" />
+          </a>
+
+          <h2>Clinckers Ca..</h2>
+          <div class="price-list">
+            <h3>$1,600.0</h3>
+
+            <div class="star">
+              <img src="Food Images/Star.png" alt="" />
+              <p>5.0</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="bottom">
+      <div class="buy">
+        <a href="./Pages/Order/order.html"
+          ><img src="Food Images/Buy.png" alt=""
+        /></a>
+      </div>
+      <div class="home">
+        <a href="app.html"><img src="Food Images/Home.png" alt="" /></a>
+      </div>
+      <div class="notification">
+        <a href="notification.html"
+          ><img src="Food Images/Notification.png" alt=""
+        /></a>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+
+    <script>
+      const dark = document.querySelector(".icon");
+      const nav = document.querySelector(".nav");
+      const search = document.querySelector(".search-box");
+      const idm = document.querySelector(".idm");
+      const bottom = document.querySelector(".bottom");
+      const rec = document.querySelector(".rec");
+      const but = document.querySelectorAll(".btn");
+
+      dark.addEventListener("click", () => {
+        nav.classList.toggle("active");
+        bottom.classList.toggle("active");
+        rec.classList.toggle("active");
+        but.forEach((butt) => {
+          butt.classList.toggle("active");
+        });
+      });
+    </script>
+  </body>
+</html>

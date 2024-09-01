@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Store</title>
+    <link rel="stylesheet" href="app.css" />
+  </head>
+  <body>
+    <nav class="nav">
+
+      <div class="top" style="margin-top: 25px">
+        <a href="index.html">
+            <img src="Food Images/Backspace.png" alt="" />
+        </a>
+  
+        <h1>About Us</h1>
+
+        <img src="./Food Images/dark2.png" alt="" class="icon">
+      </div>
+      </div>
+    </nav>
+
+    <section class="about">
+        <p style="margin-top: 10px;">Welcome to our food delivery company! We are a team of passionate foodies who are dedicated to bringing you delicious meals right to your doorstep. Our mission is to provide you with high-quality, fresh, and healthy food options that are convenient and affordable.
+
+        <p> We believe that everyone deserves access to good food, no matter how busy or hectic their lives may be. That's why we offer a wide range of cuisines and dishes that cater to all tastes and preferences. From classic comfort foods to exotic international flavors, we have something for everyone.</p>
+            
+        <p>Our team of experienced chefs and nutritionists work tirelessly to create menus that are not only delicious but also nutritious. We use only the freshest ingredients and avoid preservatives and additives whenever possible. We believe that healthy eating should be easy and accessible, and we strive to make it so for our customers.</p>
+            
+        <p>At our food delivery company, we understand the importance of convenience. That's why we offer flexible delivery options that fit your schedule. Whether you need a quick lunch on the go or a family dinner at home, we've got you covered.</p>
+            
+         <p>  We pride ourselves on our exceptional customer service and strive to exceed your expectations with every order. Our goal is to make your life easier and more delicious, one meal at a time.</p>
+            
+        <p style="margin-bottom: 100px;"> Thank you for choosing our food delivery company. We look forward to serving you soon!</p>
+    </section>
+
+
+
+
+      
+
+      
+
+      <div class="bottom">
+        <div class="buy">
+            <a href="./Pages/Order/order.html"><img src="Food Images/Buy.png" alt=""></a>
+        </div>
+        <div class="home">
+            <a href="index.html"><img src="Food Images/Home.png" alt=""></a>
+        </div>
+        <div class="notification">
+            <a href="notification.html"><img src="Food Images/Notification.png" alt=""></a>
+        </div>
+      </div>
+
+    <script>
+       const dark = document.querySelector(".icon");
+      const nav = document.querySelector(".nav");
+      const bottom = document.querySelector(".bottom");
+
+      dark.addEventListener("click", () =>{
+       nav.classList.toggle("active");
+       bottom.classList.toggle("active");
+      })
+    </script>
+  </body>
+</html>
